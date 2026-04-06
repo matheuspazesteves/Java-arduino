@@ -1,0 +1,100 @@
+/* Mobile Styles for Sensor Monitor App */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Light theme */
+.light-theme {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Dark theme */
+.dark-theme {
+    -fx-background-color: #1a1a2e;
+}
+
+/* Sensor cards */
+.sensor-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.dark-theme .sensor-card {
+    -fx-background-color: #16213e;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2);
+}
+
+/* Progress bars */
+.progress-bar {
+    -fx-accent: #3498db;
+}
+
+/* Buttons */
+.button {
+    -fx-background-radius: 25;
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.button:pressed {
+    -fx-background-color: #1c5980;
+}
+
+/* Alert list */
+.list-view {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-background-color: white;
+}
+
+.dark-theme .list-view {
+    -fx-background-color: #16213e;
+}
+
+.list-cell {
+    -fx-padding: 8 12 8 12;
+}
+
+/* Critical alert highlight */
+.critical-alert {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+}
+
+/* Status labels */
+.status-normal {
+    -fx-text-fill: #27ae60;
+}
+
+.status-warning {
+    -fx-text-fill: #f39c12;
+}
+
+.status-critical {
+    -fx-text-fill: #e74c3c;
+}
+
+/* Chart styling */
+.line-chart {
+    -fx-background-color: transparent;
+}
+
+.chart-series-line {
+    -fx-stroke: #3498db;
+    -fx-stroke-width: 2px;
+}
+
+.chart-series-circle {
+    -fx-fill: #3498db;
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
