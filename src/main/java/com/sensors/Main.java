@@ -46,10 +46,10 @@ public class Main extends Application {
             // Verifica alertas
             processor.checkAlerts(processed).forEach(ui::onAlertTriggered);
 
-            System.out.printf("📊 Simulação: Luz=%d%% Temp=%.1f°C Umidade=%d%%%n", light, temp, humidity);
+            System.out.printf("Simulação: Luz=%d%% Temp=%.1f°C Umidade=%d%%%n", light, temp, humidity);
         }, 0, 300, TimeUnit.MILLISECONDS);
 
-        System.out.println("🤖 Modo de simulação ATIVADO (dados aleatórios)");
+        System.out.println("Modo de simulação ATIVADO (dados aleatórios)");
     }
 
     @Override
@@ -84,9 +84,9 @@ public class Main extends Application {
             });
 
             reader.startReading();
-            System.out.println("✅ Monitoramento iniciado na porta: " + ports[0]);
+            System.out.println("Monitoramento iniciado na porta: " + ports[0]);
         } else {
-            System.out.println("⚠️ Nenhuma porta serial encontrada - iniciando simulação...");
+            System.out.println("Nenhuma porta serial encontrada - iniciando simulação...");
             startSimulation();
         }
     }
@@ -100,7 +100,7 @@ public class Main extends Application {
             simulatorExecutor.shutdown();
         }
         if (simulationMode) {
-            System.out.println("⏹️ Simulação parada");
+            System.out.println("Simulação parada");
         }
     }
 

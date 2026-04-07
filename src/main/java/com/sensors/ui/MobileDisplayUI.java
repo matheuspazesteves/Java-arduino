@@ -165,9 +165,6 @@ public class MobileDisplayUI extends VBox implements SensorDataListener {
             if (alert.isCritical()) {
                 lblStatus.setText("🚨 ATENÇÃO");
                 lblStatus.setStyle("-fx-text-fill: #e74c3c; -fx-font-weight: bold;");
-
-                // Vibração em dispositivos móveis (via Gluon)
-                // DeviceService.create().vibrate(500);
             }
         });
     }
@@ -177,13 +174,13 @@ public class MobileDisplayUI extends VBox implements SensorDataListener {
         Color color;
         
         if (temp < 15) {
-            status = "❄️ Frio";
+            status = "Frio";
             color = Color.web("#3498db");
         } else if (temp < 28) {
-            status = "✅ Confortável";
+            status = "Confortável";
             color = Color.web("#27ae60");
         } else {
-            status = "🔥 Quente";
+            status = "Quente";
             color = Color.web("#e67e22");
         }
         
