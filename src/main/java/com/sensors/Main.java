@@ -47,7 +47,7 @@ public class Main extends Application {
             processor.checkAlerts(processed).forEach(ui::onAlertTriggered);
 
             System.out.printf("Simulação: Luz=%d%% Temp=%.1f°C Umidade=%d%%%n", light, temp, humidity);
-        }, 0, 300, TimeUnit.MILLISECONDS);
+        }, 0, 1000, TimeUnit.MILLISECONDS);
 
         System.out.println("Modo de simulação ATIVADO (dados aleatórios)");
     }
